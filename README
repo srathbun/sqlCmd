@@ -1,0 +1,14 @@
+Project: sqlCmd
+Author: Spencer Rathbun
+Date: 2011-12-22
+Description:
+
+This project is designed to provide a "value-added" sql mini language, as well as wrapping up the tedium of connecting to a remote MS SQL server via ODBC. It is designed to provide a transaction guarantee, such that if there is a connection failure, or simple exit, then the database will roll back the state. There are several rough edges to the program, some functions WILL break on some inputs.
+
+Required libraries etc.
+Python 2.7
+pyodbc
+
+Optional:
+Replace cmd with cmd2, a better library
+pyreadline
